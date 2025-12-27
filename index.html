@@ -8,6 +8,30 @@
       name="description"
       content="A sandbox for web builds, data science, and experiments."
     />
+    <meta property="og:title" content="Snally" />
+    <meta
+      property="og:description"
+      content="A sandbox for web builds, data science, and experiments."
+    />
+    <meta property="og:url" content="https://snally.com/" />
+    <meta
+      property="og:image"
+      content="https://snally.com/assets/snally-logo.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Snally" />
+    <meta
+      name="twitter:description"
+      content="A sandbox for web builds, data science, and experiments."
+    />
+    <meta
+      name="twitter:image"
+      content="https://snally.com/assets/snally-logo.png"
+    />
+    <meta name="theme-color" content="#0c0118" />
+    <link rel="canonical" href="https://snally.com/" />
+    <link rel="icon" href="assets/snally-logo.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,7 +43,7 @@
           class="logo"
           width="200"
           height="256"
-          loading="lazy"
+          loading="eager"
           fetchpriority="high"
           decoding="async"
         />
@@ -31,17 +55,37 @@
 
         <div class="description">
           <p>
-            Have you ever seen a Snallygaster? It does not make sense and that
-            is the point. Descriptions cannot agree on its form. One evil eye. A
-            razor sharp beak. Enormous wings beating overhead, claws like steel
-            hooks, and tentacles spilling from its mouth. Long before the
-            newspapers, early settlers spoke of a Schneller Geist, a quick ghost
-            that mixed bird, beast, and nightmare into something unnamed and
-            unstable. Newspaper accounts from 1909 describe a creature
-            terrorizing western Maryland, screeching like a locomotive whistle
-            as it cut through the sky. A stitched together cryptid born from
-            contradiction and imagination. Snally exists for experiments that do
-            not fit anywhere else.
+            Have you ever seen a
+            <span class="snally-pop">
+              <button
+                type="button"
+                class="snally-pop__trigger"
+                aria-expanded="false"
+                aria-controls="snally-tooltip"
+                aria-describedby="snally-tooltip"
+              >
+                Snallygaster
+              </button>
+              <span
+                id="snally-tooltip"
+                class="snally-pop__panel"
+                role="tooltip"
+                aria-hidden="true"
+              >
+                <strong>Snallygaster</strong><br />
+                A Maryland folklore creature assembled from rumor, media, and
+                fear.<br />
+                We borrow the name for projects that are stitched together and
+                refuse to settle into a single shape.
+              </span>
+            </span>
+            ?
+          </p>
+
+          <p>
+            Descriptions never agree, and that is the point: a stitched together
+            thing of wings, beak, claws, and rumor. Born from contradiction.
+            Always in flux.
           </p>
 
           <div class="flow-media">
@@ -49,28 +93,36 @@
               class="flow-media__img"
               src="assets/charging-snally.png"
               alt="Snallygaster illustration — a purple dragon-like cryptid with wide wings, glowing eyes, and fangs in a dynamic pose. Artwork by Giodude1580."
+              width="500"
+              height="375"
+              loading="lazy"
+              decoding="async"
             />
+
+            <p>Snally exists for projects like that.</p>
 
             <p>
               Some sites wear neckties. This one shows up in neon sneakers, half
               finished prototypes tucked under its arm. Snally is a sandbox for
-              wild web builds and offbeat, data driven sketches, a playground
-              where folklore trades campfire stories for JavaScript, CSS, and
+              strange web builds and offbeat, data driven sketches, where
+              folklore trades campfire stories for JavaScript, CSS, Python, and
               Quarto.
             </p>
 
             <p>
-              Here, numbers morph into playful visuals, and HTML stretches into
-              unexpected shapes. Ideas are explored out loud, patterns are bent,
-              and experiments are allowed to remain unfinished.
+              Here, numbers turn playful. Interfaces bend. Ideas are explored
+              out loud and allowed to remain unfinished.
             </p>
           </div>
 
+          <br />
+
           <p>
-            Think of it as a garage after midnight. Lights on, coffee brewing,
-            code flickering across screens. Wander in, tap a few buttons, and
-            see what has hatched today.
+            Think of it as a garage after midnight. Lights on. Coffee brewing.
+            Code flickering.
           </p>
+
+          <p>Wander in and see what hatched today.</p>
         </div>
 
         <nav class="links">
@@ -79,5 +131,6 @@
         </nav>
       </header>
     </main>
+    <script src="popover.js" defer></script>
   </body>
 </html>

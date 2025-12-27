@@ -131,6 +131,9 @@ body {
 .description p + p {
   margin-top: 1.25rem;
 }
+.flow-media {
+  margin-top: 1.5rem;
+}
 
 /* ─── BUTTONS ─── */
 .links {
@@ -201,10 +204,74 @@ body {
   }
 }
 
-.description p {
-  margin-top: 1.25rem;
+/* Make details behave like an inline word */
+/* Popover wrapper behaves like inline text */
+.snally-pop {
+  position: relative;
+  display: inline;
 }
 
-.description p:first-child {
-  margin-top: 0;
+/* Trigger looks like linked text but remains a real button */
+.snally-pop__trigger {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.15em;
+}
+
+.snally-pop__trigger:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Panel hidden by default (CSS hover/focus shows it) */
+.snally-pop__panel {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translateX(-50%);
+  z-index: 999;
+
+  width: min(320px, 85vw);
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(20, 20, 20, 0.95);
+  color: #fff;
+
+  font-size: 0.95em;
+  line-height: 1.25;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Arrow */
+.snally-pop__panel::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+  border-width: 0 8px 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent rgba(20, 20, 20, 0.95) transparent;
+}
+
+/* Show on hover (desktop) + focus (keyboard) */
+.snally-pop:hover .snally-pop__panel,
+.snally-pop:focus-within .snally-pop__panel,
+.snally-pop__panel[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
