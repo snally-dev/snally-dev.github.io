@@ -7,10 +7,10 @@
 
     <meta
       name="description"
-      content="Snally is a sandbox for strange web builds, data science, and experimental projects."
+      content="Snally is a sandbox for strange web builds, offbeat data work, and creative technical experiments."
     />
     <meta name="theme-color" content="#0c0118" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="color-scheme" content="dark" />
 
     <link rel="canonical" href="https://snally.com/" />
     <link rel="icon" href="/assets/snally-logo.png" type="image/png" />
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Snally" />
     <meta
       property="og:description"
-      content="A sandbox for strange web builds, data science, and experimental projects."
+      content="A sandbox for strange web builds, offbeat data work, and creative technical experiments."
     />
     <meta property="og:url" content="https://snally.com/" />
     <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="Snally" />
     <meta
       name="twitter:description"
-      content="A sandbox for strange web builds, data science, and experimental projects."
+      content="A sandbox for strange web builds, offbeat data work, and creative technical experiments."
     />
     <meta name="twitter:image" content="https://snally.com/assets/snally-logo.png" />
     <meta name="twitter:image:alt" content="Snally logo" />
@@ -41,11 +41,14 @@
     <meta name="robots" content="index,follow" />
   </head>
   <body>
-    <main id="content">
-      <header class="hero">
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <main id="content" tabindex="-1">
+      <header class="hero" aria-labelledby="site-title">
         <img
           src="/assets/snally-logo.png"
-          alt="Snally logo"
+          alt=""
+          aria-hidden="true"
           class="logo"
           width="200"
           height="256"
@@ -54,7 +57,7 @@
           decoding="async"
         />
 
-        <h1 class="title">Snally</h1>
+        <h1 id="site-title" class="title">Snally</h1>
 
         <p class="tagline">
           Where cryptids code, data shapeshifts, and experiments escape the lab.
@@ -75,11 +78,12 @@
               >
                 Snallygaster
               </button>
-              <span id="snally-tooltip" class="snally-pop__panel" role="tooltip" aria-hidden="true">
+              <span id="snally-tooltip" class="snally-pop__panel" aria-hidden="true">
                 <strong>Snallygaster</strong><br />
-                A Maryland cryptid shaped as much by early 1900s newspapers as by folklore.<br />
-                Like many stories of that era, some accounts carried the biases of their time.<br />
-                We use the name for projects that are stitched together, evolving, and hard to pin
+                A Mid-Atlantic cryptid shaped as much by early twentieth century newspapers as by
+                folklore.<br />
+                Some tellings carried the prejudices of their time.<br />
+                We borrow the name for work that is stitched together, restless, and hard to pin
                 down.
               </span>
             </span>
@@ -87,46 +91,42 @@
           </p>
 
           <p>
-            Descriptions never agree, and that is the point. A stitched-together thing of wings,
-            beak, claws, and rumor. Born from contradiction. Still evolving.
+            Descriptions never agree. Wings, beak, claws, rumor. A stitched-together thing built
+            from contradiction and still mutating.
           </p>
 
-          <figure class="flow-media">
+          <div class="flow-media">
             <img
               class="flow-media__img"
               src="/assets/charging-snally.png"
-              alt="Illustration of a purple Snallygaster with wide wings, glowing eyes, and fangs in a dynamic pose."
+              alt=""
+              aria-hidden="true"
               width="500"
               height="375"
               loading="lazy"
               decoding="async"
             />
-            <figcaption class="sr-only">
-              Snallygaster illustration used as decorative site artwork.
-            </figcaption>
-
-            <p>Snally exists for projects like that.</p>
 
             <p>
-              Some sites wear neckties. This one shows up in neon sneakers, half finished prototypes
-              tucked under its arm. Snally is a sandbox for strange web builds and offbeat, data
-              driven sketches, where folklore trades campfire stories for JavaScript, CSS, Python,
-              and Quarto.
+              Snally is a sandbox for strange web builds, offbeat data work, and creative technical
+              experiments, where folklore trades campfire stories for JavaScript, CSS, Python, and
+              Quarto.
             </p>
 
             <p>
-              Here, numbers turn playful. Interfaces bend. Ideas are explored out loud and allowed
-              to remain unfinished.
+              Interfaces bend. Numbers turn playful. Ideas get tested in public and can stay a
+              little unfinished.
             </p>
-          </figure>
+          </div>
 
-          <p>Think of it as a garage after midnight. Lights on. Coffee brewing. Code flickering.</p>
-
-          <p>Wander in and see what hatched today.</p>
+          <p>
+            Think of it as a garage after midnight. Lights on. Coffee brewing. Code flickering.
+            Wander in and see what hatched today.
+          </p>
         </section>
 
         <nav class="links" aria-label="Snally links">
-          <a href="https://github.com/snally-dev" class="btn" rel="me noopener"> GitHub </a>
+          <a href="https://github.com/snally-dev" class="btn" rel="me">GitHub</a>
           <a href="mailto:caleb@typeerror.com" class="btn">Contact</a>
         </nav>
       </header>
