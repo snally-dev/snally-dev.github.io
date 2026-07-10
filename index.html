@@ -1,137 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Snally</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snally — A Home for Experiments</title>
 
     <meta
       name="description"
-      content="Snally is a sandbox for strange web builds, offbeat data work, and creative technical experiments."
-    />
-    <meta name="theme-color" content="#0c0118" />
-    <meta name="color-scheme" content="dark" />
+      content="Snally is a home for small web builds, data projects, and technical experiments."
+    >
+    <meta name="theme-color" content="#0c0118">
+    <meta name="color-scheme" content="dark">
 
-    <link rel="canonical" href="https://snally.com/" />
-    <link rel="icon" href="/assets/snally-logo.png" type="image/png" />
-    <link rel="preload" as="image" href="/assets/snally-logo.png" />
+    <link rel="canonical" href="https://snally.com/">
+    <link rel="icon" href="/assets/snally-logo.png" type="image/png">
+    <link rel="preload" as="image" href="/assets/snally-logo.png">
 
-    <meta property="og:site_name" content="Snally" />
-    <meta property="og:title" content="Snally" />
+    <meta property="og:site_name" content="Snally">
+    <meta property="og:title" content="Snally — A Home for Experiments">
     <meta
       property="og:description"
-      content="A sandbox for strange web builds, offbeat data work, and creative technical experiments."
-    />
-    <meta property="og:url" content="https://snally.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://snally.com/assets/snally-logo.png" />
-    <meta property="og:image:alt" content="Snally logo" />
+      content="A home for small web builds, data projects, and technical experiments."
+    >
+    <meta property="og:url" content="https://snally.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://snally.com/assets/snally-logo.png">
+    <meta property="og:image:alt" content="Snally logo">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Snally" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Snally — A Home for Experiments">
     <meta
       name="twitter:description"
-      content="A sandbox for strange web builds, offbeat data work, and creative technical experiments."
-    />
-    <meta name="twitter:image" content="https://snally.com/assets/snally-logo.png" />
-    <meta name="twitter:image:alt" content="Snally logo" />
+      content="A home for small web builds, data projects, and technical experiments."
+    >
+    <meta name="twitter:image" content="https://snally.com/assets/snally-logo.png">
+    <meta name="twitter:image:alt" content="Snally logo">
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style.css">
 
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index,follow">
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
-
-    <main id="content" tabindex="-1">
-      <header class="hero" aria-labelledby="site-title">
+    <main class="landing">
+      <div class="intro">
         <img
           src="/assets/snally-logo.png"
           alt=""
-          aria-hidden="true"
           class="logo"
-          width="200"
-          height="256"
+          width="1024"
+          height="1024"
           loading="eager"
           fetchpriority="high"
           decoding="async"
-        />
+        >
 
-        <h1 id="site-title" class="title">Snally</h1>
+        <h1 class="brand">Snally</h1>
 
-        <p class="tagline">
-          Where cryptids code, data shapeshifts, and experiments escape the lab.
+        <p class="statement">A home for experiments.</p>
+
+        <p class="summary">
+          Small web builds, data projects, and ideas that do not need to become products.
         </p>
 
-        <section class="description" aria-labelledby="about-snally">
-          <h2 id="about-snally" class="sr-only">About Snally</h2>
-
-          <p>
-            Have you ever seen a
-            <span class="snally-pop">
-              <button
-                type="button"
-                class="snally-pop__trigger"
-                aria-expanded="false"
-                aria-controls="snally-tooltip"
-                aria-describedby="snally-tooltip"
-              >
-                Snallygaster
-              </button>
-              <span id="snally-tooltip" class="snally-pop__panel" aria-hidden="true">
-                <strong>Snallygaster</strong><br />
-                A Mid-Atlantic cryptid shaped as much by early twentieth century newspapers as by
-                folklore.<br />
-                Some tellings carried the prejudices of their time.<br />
-                We borrow the name for work that is stitched together, restless, and hard to pin
-                down.
-              </span>
-            </span>
-            ?
-          </p>
-
-          <p>
-            Descriptions never agree. Wings, beak, claws, rumor. A stitched-together thing built
-            from contradiction and still mutating.
-          </p>
-
-          <div class="flow-media">
-            <img
-              class="flow-media__img"
-              src="/assets/charging-snally.png"
-              alt=""
-              aria-hidden="true"
-              width="500"
-              height="375"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <p>
-              Snally is a sandbox for strange web builds, offbeat data work, and creative technical
-              experiments, where folklore trades campfire stories for JavaScript, CSS, Python, and
-              Quarto.
-            </p>
-
-            <p>
-              Interfaces bend. Numbers turn playful. Ideas get tested in public and can stay a
-              little unfinished.
-            </p>
-          </div>
-
-          <p>
-            Think of it as a garage after midnight. Lights on. Coffee brewing. Code flickering.
-            Wander in and see what hatched today.
-          </p>
-        </section>
-
         <nav class="links" aria-label="Snally links">
-          <a href="https://github.com/snally-dev" class="btn" rel="me">GitHub</a>
-          <a href="mailto:caleb@typeerror.com" class="btn">Contact</a>
+          <a href="https://github.com/snally-dev" rel="me">GitHub</a>
         </nav>
-      </header>
-    </main>
 
-    <script src="/popover.js" defer></script>
+        <img
+          src="/assets/charging-snally.png"
+          alt=""
+          class="mascot"
+          width="500"
+          height="375"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+    </main>
   </body>
 </html>
