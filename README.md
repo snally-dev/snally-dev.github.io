@@ -1,6 +1,6 @@
 # Snally
 
-Snally is a small static site for [snally.com](https://snally.com), a home for small web builds, data projects, and technical experiments.
+Snally is a small static site for [snally.com](https://snally.com), a home for web design, small applications, prototypes, and useful experiments.
 
 The site stays spare on purpose: one page, one stylesheet, no build step, and no JavaScript required for basic navigation.
 

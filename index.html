@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Snally — A Home for Experiments</title>
+    <title>Snally | Web Design and Experiments</title>
 
     <meta
       name="description"
-      content="Snally is a home for small web builds, data projects, and technical experiments."
+      content="Snally creates web design, small applications, prototypes, and useful experiments for unusual ideas."
     >
-    <meta name="theme-color" content="#0c0118">
-    <meta name="color-scheme" content="dark">
-
     <link rel="canonical" href="https://snally.com/">
-    <link rel="icon" href="/assets/snally-logo.png" type="image/png">
-    <link rel="preload" as="image" href="/assets/snally-logo.png">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07110f">
+    <meta name="robots" content="index,follow">
 
     <meta property="og:site_name" content="Snally">
-    <meta property="og:title" content="Snally — A Home for Experiments">
+    <meta property="og:title" content="Snally | Web Design and Experiments">
     <meta
       property="og:description"
-      content="A home for small web builds, data projects, and technical experiments."
+      content="Web design and experiments for useful, unusual ideas."
     >
     <meta property="og:url" content="https://snally.com/">
     <meta property="og:type" content="website">
@@ -28,54 +26,60 @@
     <meta property="og:image:alt" content="Snally logo">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Snally — A Home for Experiments">
+    <meta name="twitter:title" content="Snally | Web Design and Experiments">
     <meta
       name="twitter:description"
-      content="A home for small web builds, data projects, and technical experiments."
+      content="Web design and experiments for useful, unusual ideas."
     >
     <meta name="twitter:image" content="https://snally.com/assets/snally-logo.png">
     <meta name="twitter:image:alt" content="Snally logo">
 
-    <link rel="stylesheet" href="/style.css">
-
-    <meta name="robots" content="index,follow">
+    <link rel="icon" href="assets/snally-logo.png" type="image/png" sizes="1024x1024">
+    <link rel="preload" as="image" href="assets/charging-snally.png">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <main class="landing">
-      <div class="intro">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <main id="main">
+      <header class="hero">
+        <p class="eyebrow">Web design &middot; prototypes &middot; experiments</p>
         <img
-          src="/assets/snally-logo.png"
-          alt=""
-          class="logo"
-          width="1024"
-          height="1024"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-        >
-
-        <h1 class="brand">Snally</h1>
-
-        <p class="statement">A home for experiments.</p>
-
-        <p class="summary">
-          Small web builds, data projects, and ideas that do not need to become products.
-        </p>
-
-        <nav class="links" aria-label="Snally links">
-          <a href="https://github.com/snally-dev" rel="me">GitHub</a>
-        </nav>
-
-        <img
-          src="/assets/charging-snally.png"
+          src="assets/charging-snally.png"
           alt=""
           class="mascot"
           width="500"
           height="375"
-          loading="eager"
+          fetchpriority="high"
           decoding="async"
         >
-      </div>
+        <h1 class="name">Snally</h1>
+        <p class="tagline">Web design and experiments for useful, unusual ideas.</p>
+      </header>
+
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title" class="section-title">What Snally Makes</h2>
+        <p>
+          Snally makes sharp websites, focused interfaces, small applications, and playful
+          prototypes for useful ideas that do not need extra machinery.
+        </p>
+      </section>
+
+      <footer class="contact">
+        <nav aria-label="External links">
+          <span class="connect-label">Explore Snally</span>
+          <ul class="contact-list">
+            <li>
+              <a href="https://github.com/snally-dev" rel="me">GitHub</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="project-credit">
+          A project by <a href="https://derail.net/">Caleb Kinney</a>.
+        </p>
+      </footer>
     </main>
   </body>
 </html>
